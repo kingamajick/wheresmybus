@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Route">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@drawable/bg_route</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingStart">12dp</item>
+    </style>
+</resources>
