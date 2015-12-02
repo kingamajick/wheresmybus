@@ -15,9 +15,6 @@ public class BaseMVPView<T> implements MVPView<T> {
 
     @Override
     public void setListener(@NonNull T listener) {
-        if (listener == null) {
-            throw new IllegalArgumentException("listener must not be null");
-        }
         if (mListener != null && mListener != listener) {
             throw new IllegalStateException("Attempt to register listener before previous listener unregister");
         }
@@ -26,9 +23,6 @@ public class BaseMVPView<T> implements MVPView<T> {
 
     @Override
     public void removeListener(@NonNull T listener) {
-        if (listener == null) {
-            throw new IllegalArgumentException("listener must not be null");
-        }
         if (mListener != null && mListener != listener) {
             throw new IllegalStateException("Attempt to register listener which hasn't been previously registered");
         }

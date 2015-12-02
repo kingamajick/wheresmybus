@@ -15,17 +15,11 @@ public class BaseMVPModel implements MVPModel {
 
     @Override
     public void registerObserver(@NonNull ModelObserver modelObserver) {
-        if (modelObserver == null) {
-            throw new IllegalArgumentException("ModelObserver must not be null");
-        }
         mModelObservers.add(modelObserver);
     }
 
     @Override
     public void unregisterObserver(@NonNull ModelObserver modelObserver) {
-        if (modelObserver == null) {
-            throw new IllegalArgumentException("ModelObserver must not be null");
-        }
         if (!mModelObservers.contains(modelObserver)) {
             throw new IllegalArgumentException("Trying to unregister modelObserver which isn't registered");
         }
